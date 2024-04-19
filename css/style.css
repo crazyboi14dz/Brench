@@ -1,0 +1,327 @@
+:root {
+    --dz-theme: #723c9a;
+    --dz-hot-pink: #ff5064;
+    --dz-white: #fff;
+    --dz-black: #000000;
+    --dz-grey: grey;
+}
+
+/* .custom-navbar {
+    background-color: #743e9e80;
+    opacity: 0.85;
+} */
+
+.bg-theme {
+    background-color: var(--dz-hot-pink);
+}
+
+.theme-color {
+    color: var(--dz-theme);
+}
+
+/* 
+++++++++++++++++++++++++++
+Banner
+++++++++++++++++++++++++++
+*/
+.banner-prenext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dz-black);
+    opacity: 0.50;
+    height: 50px;
+    width: 50px;
+    border-radius: 34px;
+}
+
+.banner-prenext .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 24px;
+}
+
+.dz-banner-content .banner-indicators {
+    right: 283px;
+    top: 443px;
+}
+
+.dz-banner-content .banner-indicators .banner-indicators-btn {
+    width: 9px;
+    height: 9px;
+    border: 2px solid var(--dz-black);
+    border-radius: 12px;
+    background-color: var(--dz-black);
+}
+
+.carousel-indicators .active {
+    background-color: var(--dz-hot-pink) !important;
+    opacity: 1;
+    border: 2px solid var(--dz-hot-pink) !important;
+}
+
+.btn-theme {
+    border-radius: 0;
+    padding: 8px 26px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: medium;
+    box-shadow: 0px 0px 15px 1px rgba(53, 53, 53, 0.75);
+}
+
+.btn-theme:hover {
+    background-color: var(--dz-white);
+    color: var(--dz-hot-pink);
+    box-shadow: 0px 0px 15px 1px rgba(53, 53, 53, 0.75);
+}
+
+.dz-banner {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.dz-banner::before {
+    content: '';
+    background-color: var(--dz-theme);
+    /* background-color: #743e9e80; */
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dz-banner .dz-banner-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    z-index: 9;
+}
+
+.dz-banner .dz-banner-content .content {
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+}
+
+.dz-banner .dz-banner-content .content h2 {
+    font-size: 65px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.dz-banner .dz-banner-content .content p {
+    margin-bottom: 60px;
+}
+
+.dz-banner .dz-banner-content .content img {
+    width: 100%;
+}
+
+/* 
+++++++++++++++++++++++++++
+About us and our crew
+++++++++++++++++++++++++++
+*/
+.section-crew {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section-crew .section-heading h2 {
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.section-crew .section-heading p {
+    text-align: center;
+}
+
+.section-crew .crew h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 12px;
+    margin-bottom: 38px;
+    color: var(--dz-grey);
+}
+
+.section-crew .crew .crew-card {
+    overflow: hidden;
+    background-color: #e3eefd;
+    transition: 0.5s;
+}
+
+.section-crew .crew .crew-card:hover {
+    transform: scaleY(1.05)
+}
+
+.section-crew .crew .crew-card img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.section-crew .crew .crew-card p {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #105081;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.section-crew .crew .crew-card span {
+    display: block;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--dz-grey);
+}
+
+.section-crew .crew .crew-card .crew-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.section-crew .crew .crew-card .crew-social i {
+    width: 18px;
+}
+
+.section-crew .crew .crew-card .crew-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 16px;
+    color: #105081;
+    transition: 0.6s;
+}
+
+
+.section-crew .crew .crew-card .crew-social a:hover {
+    background-color: #105081;
+    color: var(--dz-white);
+    width: 34px;
+    height: 34px;
+    border-radius: 16px;
+}
+
+/* 
+++++++++++++++++++++++++++
+Our work
+++++++++++++++++++++++++++
+*/
+.section-work {
+    margin-top: 100px;
+    padding-top: 24px;
+    background-color: #eef2fb;
+}
+
+.section-work .work-grid {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section-work .work-grid .work {
+    position: relative;
+}
+
+.section-work .work-grid img {
+    max-width: 100%;
+}
+
+.section-work .work-grid .work .work-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-work .work-grid .work .work-content .up {
+    top: 0;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.section-work .work-grid .work .work-content .up .tags {
+    padding: 30px;
+}
+
+.section-work .work-grid .work .work-content .up .tags span {
+    text-transform: uppercase;
+    color: var(--dz-white);
+    background-color: var(--dz-black);
+    opacity: 0.6;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.section-work .work-grid .work .work-content .up .year {
+    padding: 30px;
+}
+
+.section-work .work-grid .work .work-content .up .year span {
+    color: var(--dz-white);
+}
+
+.section-work .work-grid .work .work-content .bottom {
+    position: absolute;
+    bottom: 0;
+    padding-left: 30px;
+}
+
+.section-work .work-grid .work .work-content .bottom p {
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--dz-white);
+}
+
+.section-work .work-grid .work {
+    margin-bottom: 20px;
+    z-index: 8;
+}
+
+.section-work .work-grid div .work:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: brightness(85%);
+}
+
+.section-work .work-grid div .work i {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color: var(--dz-white);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.section-work .work-grid div .work:hover i {
+    opacity: 1;
+}
+
+/* 
+++++++++++++++++++++++++++
+Our Services
+++++++++++++++++++++++++++
+*/
