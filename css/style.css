@@ -165,7 +165,7 @@ About us and our crew
 }
 
 .section-crew .crew .crew-card:hover {
-    transform: scaleY(1.05)
+    transform: scale(1.05);
 }
 
 .section-crew .crew .crew-card img {
@@ -228,8 +228,7 @@ Our work
 ++++++++++++++++++++++++++
 */
 .section-work {
-    margin-top: 100px;
-    padding-top: 24px;
+    padding: 50px 0;
     background-color: #eef2fb;
 }
 
@@ -325,3 +324,80 @@ Our work
 Our Services
 ++++++++++++++++++++++++++
 */
+.section-service {
+    padding: 50px 0;
+    background-color: #1e427c;
+}
+
+.section-service .service-grid {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section-service .service-grid .service-card {
+    background-color: #132748;
+    padding: 32px;
+}
+
+.section-service .service-grid .service-card .pack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-service .service-grid .service-card .pack p {
+    color: var(--dz-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+.section-service .service-grid .service-card .pack span {
+    font-size: 12px;
+    text-align: center;
+}
+
+.section-service .service-grid .service-card .price {
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-service .service-grid .service-card .price p {
+    color: #768eb0;
+    margin: 0;
+    font-size: 80px;
+    font-weight: lighter;
+    text-align: start;
+}
+
+.section-service .service-grid .service-card .price p span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.section-service .service-grid .service-card .period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-service .service-grid .service-card .period p {
+    text-align: center;
+    width: 130px;
+    padding: 6px;
+    color: #132748;
+    background: #768eb0;
+    text-transform: uppercase;
+    margin: 0;
+}
+.section-service .service-grid .service-card .benefits{
+    color: #768eb0;
+}
+.section-service .service-grid .service-card .benefits p{
+    text-align: center;
+    margin-bottom: 8px;
+}
