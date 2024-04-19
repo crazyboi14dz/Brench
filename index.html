@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container py-3 px-5">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
@@ -29,6 +29,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Our Works</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Services</a>
@@ -131,7 +134,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="about">
             <div class="container">
                 <div class="section-crew my-5">
                     <div class="section-heading py-5">
@@ -226,7 +229,7 @@
             </div>
         </section>
 
-        <section class="section-work">
+        <section id="work" class="section-work">
             <div class="container">
                 <div class="section-crew mt-3">
                     <div class="section-heading py-5">
@@ -407,7 +410,7 @@
             </div>
         </section>
 
-        <section class="section-service">
+        <section id="services" class="section-service">
             <div class="container">
                 <div class="section-crew mt-3">
                     <div class="section-heading py-5">
@@ -549,11 +552,141 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="blogs" class="section-blog">
+            <div class="container">
+                <div class="section-crew mt-3">
+                    <div class="section-heading py-5 text-white">
+                        <h2>our blogs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Voluptate,
+                            sint assumenda, sequi
+                            consequuntur explicabo, eos consequatur repellat perspiciatis nisi in fuga. Quam rerum
+                            repellendus dignissimos suscipit perferendis nesciunt quasi hic? Quam rerum
+                            repellendus dignissimos suscipit perferendis nesciunt quasi hic?</p>
+                    </div>
+                </div>
+
+                <div class="blog-grid">
+                    <div class="row justify-content-center align-items-center g-3">
+                        <div class="col-12 col-lg">
+                            <div class="blog-card">
+                                <img src="images/cyclist.jpg" alt="blog image">
+                                <div class="blog-content">
+                                    <div class="top">
+                                        <p>02</p>
+                                        <p>november</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span>sports</span>
+                                        <p class="title">how does it feel to be a cyclist</p>
+                                        <div class="actions">
+                                            <p><i class="bi bi-heart"></i> 1,208</p>
+                                            <p><i class="bi bi-chat"></i> 55</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg">
+                            <div class="blog-card">
+                                <img src="images/foodaholic.jpg" alt="blog image">
+                                <div class="blog-content">
+                                    <div class="top">
+                                        <p>24</p>
+                                        <p>october</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span>foods</span>
+                                        <p class="title">a day in life of a foodaholic</p>
+                                        <div class="actions">
+                                            <p><i class="bi bi-heart"></i> 1,208</p>
+                                            <p><i class="bi bi-chat"></i> 55</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg">
+                            <div class="blog-card">
+                                <img src="images/motorbiker.jpg" alt="blog image">
+                                <div class="blog-content">
+                                    <div class="top">
+                                        <p>11</p>
+                                        <p>july</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span>lifestyle</span>
+                                        <p class="title">a day in life of a motor biker</p>
+                                        <div class="actions">
+                                            <p><i class="bi bi-heart"></i> 1,208</p>
+                                            <p><i class="bi bi-chat"></i> 55</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-4">
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-opacity ">read more!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-content">
+                            <div class="contact-heading">
+                                <h2>contact us</h2>
+                                <p>We are looking for new interesting projects.</p>
+                            </div>
+                            <div class="row justify-content-center align-items-center g-2">
+                                <div class="col">
+                                    <form class="contact-form">
+                                        <div class="row flex-column g-2">
+                                            <div class="col">
+                                                <!-- <input type="text" placeholder="NAME" class="contact-input"> -->
+                                                <input type="text" class="contact-input">
+                                                <span class="placeholder">NAME</span>
+                                            </div>
+                                            <div class="col">
+                                                <!-- <input type="text" placeholder="EMAIL" class="contact-input"> -->
+                                                <input type="text" class="contact-input">
+                                                <span class="placeholder">EMAIL</span>
+                                            </div>
+                                            <div class="col">
+                                                <!-- <input type="text" placeholder="SUBJECT" class="contact-input"> -->
+                                                <input type="text" class="contact-input">
+                                                <span class="placeholder">SUBJECT</span>
+                                            </div>
+                                            <div class="col">
+                                                <!-- <textarea name="" id="" cols="30" rows="3" class="contact-input" placeholder="MESSAGE"></textarea> -->
+                                                <textarea cols="30" rows="3" class="contact-input"></textarea>
+                                                <span class="placeholder">MESSAGE</span>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-theme bg-theme">submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
