@@ -365,19 +365,18 @@ Our Services
     justify-content: center;
 }
 
-
 .section-service .service-grid .service-card .price p {
     color: #768eb0;
-    margin: 0;
     font-size: 80px;
     font-weight: lighter;
-    text-align: start;
+    margin: 0;
 }
 
-.section-service .service-grid .service-card .price p span {
-    font-size: 30px;
-    font-weight: 600;
+.section-service .service-grid .service-card .price p:first-child {
+    font-size: 46px;
+    font-weight: 400;
 }
+
 
 .section-service .service-grid .service-card .period {
     display: flex;
@@ -394,10 +393,12 @@ Our Services
     text-transform: uppercase;
     margin: 0;
 }
-.section-service .service-grid .service-card .benefits{
+
+.section-service .service-grid .service-card .benefits {
     color: #768eb0;
 }
-.section-service .service-grid .service-card .benefits p{
+
+.section-service .service-grid .service-card .benefits p {
     text-align: center;
     margin-bottom: 8px;
 }
