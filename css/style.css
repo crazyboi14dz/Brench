@@ -571,57 +571,91 @@ Contact us
     font-weight: 700;
 }
 
-/* 
-.section-contact .contact-content .contact-form .contact-input {
-    border: 0;
-    width: 100%;
-    padding: 8px;
-    background: #647b9d;
-} */
-
-/* .section-contact .contact-content .contact-form .contact-input::placeholder {
-    font-size: 16px;
-    font-weight: lighter;
-    color: var(--dz-white);
-} */
-
-.section-contact .contact-content .contact-form input,
-textarea,
-[contenteditable] {
-    /* cursor color  */
-    caret-color: var(--dz-white);
-}
-
-.section-contact .contact-content .contact-form .contact-input:focus {
-    background: #2d405c;
-    outline: none;
-    border-bottom: 4px solid #647b9d;
-    color: var(--dz-white);
-    font-weight: bold;
-}
-
-
-.section-contact .contact-content .contact-form .contact-input {
+/*++++++++++++++++++++ 
+Contact form 
+++++++++++++++++++++++*/
+.section-contact .contact-content .contact-form .contact-grp {
     position: relative;
-    outline: none;
-    border: 0;
-    width: 100%;
-    padding: 8px;
-    background: #647b9d;
+    overflow: hidden;
 }
 
-/* ++++++++++++++++
-from here left
-+++++++++++++++++++ */
+.section-contact .contact-content .contact-padding {
+    padding-right: 150px;
+    padding-left: 150px;
+}
 
-.section-contact .contact-content .contact-form  .placeholder {
+.section-contact .contact-content .contact-form .contact-grp .contact-input,
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    color: #fff;
+    padding: 18px 0 10px 16px;
+    border: none;
+    background-color: #647b9d;
+    resize: none;
+    overflow: auto;
+}
+
+.section-contact .contact-content .contact-form .contact-grp .label-name {
     position: absolute;
-    left: 20px;
-    background-color:#647b9d;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
     color: white;
 }
 
-.section-contact .contact-content .contact-form .contact-input:focus~.placeholder,
-.section-contact .contact-content .contact-form .contact-input:valid~.placeholder {
-    display: none;
+.section-contact .contact-content .contact-form .contact-grp .label-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
 }
+
+.section-contact .contact-content .contact-form .contact-grp .content-name {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 16px;
+    top: 16px;
+    left: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.section-contact .contact-content .contact-form .contact-grp .contact-input:focus,
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea:focus, 
+.section-contact .contact-content .contact-form .contact-grp .contact-input:valid, 
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea:valid {
+    outline: none;
+    background-color: #3d5172;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.section-contact .contact-content .contact-form .contact-grp .contact-input:focus+.label-name .content-name,
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea:focus+.label-name .content-name,
+.section-contact .contact-content .contact-form .contact-grp .contact-input:valid+.label-name .content-name,
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea:valid+.label-name .content-name {
+    font-size: 9px;
+    top: 4px;
+    left: 16px;
+    color: #cccccc;
+    transition: all 0.5s ease-in-out;
+}
+
+.section-contact .contact-content .contact-form .contact-grp .contact-input:focus+.label-name::after,
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea:focus+.label-name::after,
+.section-contact .contact-content .contact-form .contact-grp .contact-input:valid+.label-name::after,
+.section-contact .contact-content .contact-form .contact-grp .contact-textarea:valid+.label-name::after {
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+}
+

@@ -649,42 +649,61 @@
                                 <h2>contact us</h2>
                                 <p>We are looking for new interesting projects.</p>
                             </div>
-                            <div class="row justify-content-center align-items-center g-2">
-                                <div class="col">
+                            <div class="row justify-content-center align-items-end g-2">
+                                <div class="col contact-padding">
+                                    
                                     <form class="contact-form">
                                         <div class="row flex-column g-2">
                                             <div class="col">
-                                                <!-- <input type="text" placeholder="NAME" class="contact-input"> -->
-                                                <input type="text" class="contact-input">
-                                                <span class="placeholder">NAME</span>
+                                                <div class="contact-grp">
+                                                    <input type="text" class="contact-input" id="name-input" required>
+                                                    <label class="label-name" for="name-input">
+                                                        <span class="content-name">Name</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <!-- <input type="text" placeholder="EMAIL" class="contact-input"> -->
-                                                <input type="text" class="contact-input">
-                                                <span class="placeholder">EMAIL</span>
+                                                <div class="contact-grp">
+                                                    <input type="text" class="contact-input" id="email-input"
+                                                        autocomplete="off" required />
+                                                    <label class="label-name" for="email-input">
+                                                        <span class="content-name">Email</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <!-- <input type="text" placeholder="SUBJECT" class="contact-input"> -->
-                                                <input type="text" class="contact-input">
-                                                <span class="placeholder">SUBJECT</span>
+                                                <div class="contact-grp">
+                                                    <input type="text" class="contact-input" id="subject-input"
+                                                        autocomplete="off" required />
+                                                    <label class="label-name" for="subject-input">
+                                                        <span class="content-name">Subject</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <!-- <textarea name="" id="" cols="30" rows="3" class="contact-input" placeholder="MESSAGE"></textarea> -->
-                                                <textarea cols="30" rows="3" class="contact-input"></textarea>
-                                                <span class="placeholder">MESSAGE</span>
+                                                <div class="contact-grp">
+                                                    <textarea class="contact-textarea" id="message-input"
+                                                        required></textarea>
+                                                    <label class="label-name" for="message-input">
+                                                        <span class="content-name">Message</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <button type="button" class="btn btn-theme bg-theme">submit</button>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-theme bg-theme">submit</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
+
                                 </div>
                                 <div class="col">
-                                    
+
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </section>
@@ -692,6 +711,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
