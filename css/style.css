@@ -6,11 +6,6 @@
     --dz-grey: grey;
 }
 
-/* .custom-navbar {
-    background-color: #743e9e80;
-    opacity: 0.85;
-} */
-
 .theme-color {
     color: var(--dz-theme);
 }
@@ -32,6 +27,33 @@
 .btn-opacity:hover {
     background: var(--dz-white);
     color: var(--dz-hot-pink);
+}
+
+.btn-work {
+    background-color: var(--dz-grey);
+    border-radius: 0;
+    padding: 8px 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: medium;
+    color: #ffffff;
+}
+
+.btn-work:hover {
+    background: var(--dz-hot-pink);
+    color: var(--dz-white);
+}
+/* ++++++++++++
+Header
++++++++++++++++
+*/
+header {
+    transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled nav {
+    background-color: var(--dz-black);
+    opacity: 0.8;
 }
 
 /* 
@@ -316,6 +338,7 @@ Our work
     transform: scale(1.05);
     cursor: pointer;
     filter: brightness(85%);
+    transition: 0.5s;
 }
 
 .section-work .work-grid div .work i {
@@ -442,6 +465,7 @@ Our Blogs
     width: 100%;
     background-size: cover;
     filter: brightness(0.7);
+    transition: 0.5s;
 }
 
 .section-blog .blog-grid .blog-card .blog-content {
@@ -453,7 +477,7 @@ Our Blogs
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .section-blog .blog-grid .blog-card:hover .blog-content {
@@ -513,7 +537,7 @@ Our Blogs
     display: none;
     gap: 20px;
     color: white;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .section-blog .blog-grid .blog-card .blog-content:hover .bottom .actions {
@@ -707,20 +731,23 @@ contact info
 /* +++++++++++++++
 footer
 ++++++++++++++++++ */
-footer{
+footer {
     padding: 20px;
     background-color: #1e427c;
 }
-footer p{
+
+footer p {
     color: #667a9b;
     margin: 0;
 }
-footer p a{
+
+footer p a {
     text-decoration: none;
     font-weight: 700;
     color: white;
 }
-footer img{
+
+footer img {
     width: 52px;
     color: #667a9b;
 }
